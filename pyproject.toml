@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "txt2mp3"
+version = "0.1.0"
+description = ""
+authors = ["Alexander Stevenson <27918923+xanderstevenson@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "txt2mp3", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rich-click = "^1.6.0"
+gtts = "^2.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+greet = "txt2mp3.translate:cli"
